@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Adding new places for map app</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="/add" method="POST">
+    <p>Let's add a new place.</p>
+    location.setPlaceName(place);
+    location.setAddress(address);
+    location.setLongitude(longitude);
+    location.setLatitude(latitude);
+
+
+    <div>
+        <label for="placeName">Place name:</label>
+        <input name="place" id="placeName" value="Cinema">
+    </div>
+    <div>
+        <label for="address">Last name:</label>
+        <input name="address" id="address" value="John Street...">
+    </div>
+    <div>
+        <label for="lon">Longitude:</label>
+        <input name="longitude" id="lon" value="Longitude data...">
+    </div>
+
+    <div>
+        <label for="lat">Latitude:</label>
+        <input name="latitude" id="lat" value="Latitude data...">
+    </div>
+    <div>
+        <button>Add place</button>
+    </div>
+</form>
+
+
+
+<form action="/list" method="GET">
+    <button>List places</button>
+</form>
+</body>
+</html>
